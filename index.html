@@ -41,12 +41,34 @@
 <input type="text" id="Exec">
 </label>
 <button id="Submit" onClick="Submit()">Submit</button>
+<button id="TryDigger" onClick="TryDigger()">Try Digger</button>
 <script>
 	function Submit()
 	{
         location.href = '#jsdos';
         var Exec = $("#Exec").val();
         var URL = $("#URL").val();
+		
+    Dos(document.getElementById("jsdos"), {
+        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
+        cycles: 1000,
+        autolock: false,
+    }).ready(function (fs, main) {
+      fs.extract(URL).then(function () {
+        main(["-c", Exec]).then(function (ci) {
+            window.ci = ci;
+        });
+      });
+    });
+  
+	}
+</script>
+<script>
+	function TryDigger()
+	{
+        location.href = '#jsdos';
+        var Exec = "DIGGER.COM"
+        var URL = "https://js-dos.com/6.22/current/test/digger.zip"
 		
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
