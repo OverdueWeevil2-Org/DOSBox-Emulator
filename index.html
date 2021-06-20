@@ -43,9 +43,19 @@
 <button id="Submit">Submit</button>
 <script>
 $(document).ready(function(){
-    // Get value on button click and show alert
     $("#Submit").click(function(){
         var Exec = $("#Exec").val();
         var URL = $("#URL").val();
+      Dos(document.getElementById("jsdos"), {
+        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
+        cycles: 1000,
+        autolock: false,
+    }).ready(function (fs, main) {
+      fs.extract(URL).then(function () {
+        main(["-c", Exec]).then(function (ci) {
+            window.ci = ci;
+        });
+      });
+    });
 </script>
 </html>
