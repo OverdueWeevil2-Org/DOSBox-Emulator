@@ -50,7 +50,7 @@
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
         cycles: 1000,
-        autolock: false,
+        autolock: true,
     }).ready(function (fs, main) {
       fs.extract(URL).then(function () {
         main(["-c", Exec]).then(function (ci) {
@@ -71,7 +71,7 @@
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
         cycles: 1000,
-        autolock: false,
+        autolock: true,
     }).ready(function (fs, main) {
       fs.extract(URL).then(function () {
         main(["-c", Exec]).then(function (ci) {
