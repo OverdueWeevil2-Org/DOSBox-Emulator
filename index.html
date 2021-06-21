@@ -54,13 +54,16 @@
         location.href = '#jsdos';
         var Exec = $("#Exec").val();
         var URL = document.getElementById("URL");
+	var reader = new FileReader();
+	reader.onload = function()
+	var file_data = reader.result;
 		
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
         cycles: 1000,
         autolock: false,
     }).ready(function (fs, main) {
-      fs.extract(URL).then(function () {
+      fs.extract(file_data).then(function () {
         main(["-c", Exec]).then(function (ci) {
             window.ci = ci;
         });
