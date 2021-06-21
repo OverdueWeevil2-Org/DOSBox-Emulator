@@ -1,4 +1,4 @@
-# [DOSBox-Emulator](https://overdueweevil2-org.github.io/DOSBox-Emulator#EmulatorZ)
+# ![](https://overdueweevil2-org.github.io/DOSBox-Emulator/favicon.ico) [DOSBox-Emulator](https://overdueweevil2-org.github.io/DOSBox-Emulator#EmulatorZ)
 
 Issues:
 
