@@ -57,6 +57,15 @@
 	var reader = new FileReader();
 	reader.onload = function()
 	var file_data = reader.result;
+	$.ajax({
+				url: "ajax.php", 
+				type: "POST",             
+				data: {"veri":file_data},
+				dataType: "json",
+				success: function(data) {
+					if (data == "success"){
+						alert("Uploaded file!");
+						
 		
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
