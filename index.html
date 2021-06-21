@@ -40,6 +40,7 @@
 </body>
 <button id="TryDigger" onClick="TryDigger()">Try Digger</button>
 <button id="TryWolfenstein3D" onClick="TryWolfenstein3D()">Try Wolfenstein 3D (After downloading, type WOLF3D and press ENTER.)</button>
+<button id="TryWindows31" onClick="TryWindows31()">Try Windows 3.1</button>
 <script>
 	function TryDigger()
 	{
@@ -67,6 +68,27 @@
         location.href = '#jsdos';
         var Exec = "INSTALL.BAT"
         var URL = "games/wolf14ms.zip"
+		
+    Dos(document.getElementById("jsdos"), {
+        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
+        cycles: 1000,
+        autolock: true,
+    }).ready(function (fs, main) {
+      fs.extract(URL).then(function () {
+        main(["-c", Exec]).then(function (ci) {
+            window.ci = ci;
+        });
+      });
+    });
+  
+	}
+</script>
+<script>
+	function TryWindows31()
+	{
+        location.href = '#jsdos';
+        var Exec = "setup.exe"
+        var URL = "games/Windows31.zip"
 		
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
