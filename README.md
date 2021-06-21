@@ -1,4 +1,4 @@
-# [DosBox-Emulator](https://overdueweevil2-org.github.io/DosBox-Emulator#EmulatorZ)
+# [DOSBox-Emulator](https://overdueweevil2-org.github.io/DOSBox-Emulator#EmulatorZ)
 
 Issues:
 
