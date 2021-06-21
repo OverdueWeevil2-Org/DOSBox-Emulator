@@ -38,49 +38,8 @@
   </script> -->
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </body>
-<label for="URL">Upload of the program's ZIP archive:
-<input type="file" id="URL" multiple="multiple">
-</label>
-
-<label for="Exec">Type executable file (ex. DIGGER.COM):
-<input type="text" id="Exec">
-</label>
-<button id="Submit" onClick="Submit()">Submit</button>
 <button id="TryDigger" onClick="TryDigger()">Try Digger</button>
 <button id="TryWolfenstein3D" onClick="TryWolfenstein3D()">Try Wolfenstein 3D (After downloading, type WOLF3D and press ENTER.)</button>
-<script>
-	function Submit()
-	{
-        location.href = '#jsdos';
-        var Exec = $("#Exec").val();
-        var URL = document.getElementById("URL");
-	var reader = new FileReader();
-	reader.onload = function()
-	var file_data = reader.result;
-	$.ajax({
-				url: "ajax.php", 
-				type: "POST",             
-				data: {"veri":file_data},
-				dataType: "json",
-				success: function(data) {
-					if (data == "success"){
-						alert("Uploaded file!");
-						
-		
-    Dos(document.getElementById("jsdos"), {
-        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: 1000,
-        autolock: false,
-    }).ready(function (fs, main) {
-      fs.extract(file_data).then(function () {
-        main(["-c", Exec]).then(function (ci) {
-            window.ci = ci;
-        });
-      });
-    });
-  
-	}
-</script>
 <script>
 	function TryDigger()
 	{
