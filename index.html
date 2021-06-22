@@ -41,6 +41,7 @@
 <button id="TryDigger" onClick="TryDigger()">Try Digger</button>
 <button id="TryWolfenstein3D" onClick="TryWolfenstein3D()">Try Wolfenstein 3D (After downloading, type WOLF3D and press ENTER.)</button>
 <button id="TryWindows31" onClick="TryWindows31()">Try Windows 3.1</button>
+<button id="TrySimCity2000" onClick="TrySimCity2000()">Try SimCity 2000</button>
 <script>
 	function TryDigger()
 	{
@@ -93,6 +94,27 @@
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
         cycles: 10000,
+        autolock: true,
+    }).ready(function (fs, main) {
+      fs.extract(URL).then(function () {
+        main(["-c", Exec]).then(function (ci) {
+            window.ci = ci;
+        });
+      });
+    });
+  
+	}
+</script>
+<script>
+	function TrySimCity2000()
+	{
+        location.href = '#jsdos';
+        var Exec = "SimCity2000.bat"
+        var URL = "games/SimCity2000.zip"
+		
+    Dos(document.getElementById("jsdos"), {
+        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
+        cycles: 1000,
         autolock: true,
     }).ready(function (fs, main) {
       fs.extract(URL).then(function () {
