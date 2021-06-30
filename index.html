@@ -38,10 +38,23 @@
   </script> -->
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </body>
-<button id="TryDigger" onClick="TryDigger()">Try Digger</button>
-<button id="TryWolfenstein3D" onClick="TryWolfenstein3D()">Try Wolfenstein 3D (After downloading, type WOLF3D and press ENTER.)</button>
-<button id="TryWindows31" onClick="TryWindows31()">Try Windows 3.1</button>
-<button id="TrySimCity2000" onClick="TrySimCity2000()">Try SimCity 2000</button>
+<button id="TryDigger" onClick="TryDigger()" class="buttonZ">Try Digger</button>
+<button id="TryWolfenstein3D" onClick="TryWolfenstein3D()" class="buttonZ">Try Wolfenstein 3D (After downloading, type WOLF3D and press ENTER.)</button>
+<button id="TryWindows31" onClick="TryWindows31()" class="buttonZ">Try Windows 3.1</button>
+<button id="TrySimCity2000" onClick="TrySimCity2000() class="buttonZ">Try SimCity 2000</button>
+<script>
+ 
+    $(document).ready(function(){
+       
+        $(“#jsdos”).hide()
+        
+        $(".buttonZ").click(function(){
+           $(“#jsdos”).show() 
+        });
+        
+    });
+    
+</script>
 <script>
 	function TryDigger()
 	{
