@@ -42,6 +42,7 @@
 <button id="TryWolfenstein3D" onClick="TryWolfenstein3D()">Try Wolfenstein 3D (After downloading, type WOLF3D and press ENTER.)</button>
 <button id="TryWindows31" onClick="TryWindows31()">Try Windows 3.1</button>
 <button id="TrySimCity2000" onClick="TrySimCity2000()">Try SimCity 2000</button>
+<button id="TryMario" onClick="TryMario()">Try Super Mario Bros</button>
 <button onClick="Issue()">Issue</button>
 <script>location.href = '#EmulatorZ';</script>
 <script>
@@ -123,6 +124,27 @@
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
         cycles: 1000,
+        autolock: true,
+    }).ready(function (fs, main) {
+      fs.extract(URL).then(function () {
+        main(["-c", Exec]).then(function (ci) {
+            window.ci = ci;
+        });
+      });
+    });
+  
+	}
+</script>
+<script>
+	function TryMario()
+	{
+        location.href = '#jsdos';
+        var Exec = "sys01 1"
+        var URL = "games/SuperMarioBros.zip"
+		
+    Dos(document.getElementById("jsdos"), {
+        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
+        cycles: 10000,
         autolock: true,
     }).ready(function (fs, main) {
       fs.extract(URL).then(function () {
