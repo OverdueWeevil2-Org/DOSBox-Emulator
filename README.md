@@ -6,6 +6,8 @@
 
 [Windows 3.1 (Source: ](games/Windows31.zip?raw=true)[winworldpc.com](//winworldpc.com)[)](games/Windows31.zip?raw=true)
 
-[SimCity 2000 (Source: ](games/SimCity2000.zip?raw=true)[gamesnostalgia.com](//gamesnostalgia.com)[)]((games/SimCity2000.zip?raw=true))
+[SimCity 2000 (Source: ](games/SimCity2000.zip?raw=true)[gamesnostalgia.com](//gamesnostalgia.com)[)](games/SimCity2000.zip?raw=true)
+
+[SimCity 2000 (Source: ](games/SuperMarioBros.zip?raw=true)[emulatorgames.net](//emulatorgames.net)[)](games/SuperMarioBros.zip?raw=true)
 ## Issues
 **Windows 3.1**: Mouse not working after installation. (Solution: Type ``WIN /S`` instead of ``WIN`` when starting Windows.)
