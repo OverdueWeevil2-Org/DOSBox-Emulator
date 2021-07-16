@@ -39,14 +39,14 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 <button id="TryDigger" onClick="TryDigger()">Try Digger</button>
-<button id="TryWolfenstein3D" onClick="TryWolfenstein3D()">Try Wolfenstein 3D (After downloading, type WOLF3D and press ENTER.)</button>
+<button id="TryWolfenstein3D" onClick="TryWolfenstein3D()">Try Wolfenstein 3D</button>
 <button id="TryWindows31" onClick="TryWindows31()">Try Windows 3.1</button>
 <button id="TrySimCity2000" onClick="TrySimCity2000()">Try SimCity 2000</button>
 <button id="TryMario" onClick="TryMario()">Try Super Mario Bros</button>
-<button onClick="Issue()">Issue</button>
+<button onClick="Issues()">Issues</button>
 <script>location.href = '#EmulatorZ';</script>
 <script>
-	function Issue()
+	function Issues()
 	{
         location.href = 'https://github.com/OverdueWeevil2-Org/DOSBox-Emulator/issues?utm-source=OverdueWeevil2-Org.github.io';
 	}
@@ -60,7 +60,7 @@
 		
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: 1000,
+        cycles: "auto",
         autolock: true,
     }).ready(function (fs, main) {
       fs.extract(URL).then(function () {
@@ -81,11 +81,11 @@
 		
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: 1000,
+        cycles: "auto",
         autolock: true,
     }).ready(function (fs, main) {
       fs.extract(URL).then(function () {
-        main(["-c", Exec]).then(function (ci) {
+        main(["-c", Exec, "-c", "WOLF3D"]).then(function (ci) {
             window.ci = ci;
         });
       });
@@ -102,11 +102,11 @@
 		
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: 1000,
+        cycles: "auto",
         autolock: true,
     }).ready(function (fs, main) {
       fs.extract(URL).then(function () {
-        main(["-c", Exec]).then(function (ci) {
+        main(["-c", Exec, "-c", "WIN /S"]).then(function (ci) {
             window.ci = ci;
         });
       });
@@ -123,7 +123,7 @@
 		
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: 1000,
+        cycles: "auto",
         autolock: true,
     }).ready(function (fs, main) {
       fs.extract(URL).then(function () {
@@ -144,7 +144,7 @@
 		
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: 1000,
+        cycles: "auto",
         autolock: true,
     }).ready(function (fs, main) {
       fs.extract(URL).then(function () {
