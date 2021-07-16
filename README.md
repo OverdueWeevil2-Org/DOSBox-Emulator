@@ -8,6 +8,6 @@
 
 [SimCity 2000 (Source: ](games/SimCity2000.zip?raw=true)[gamesnostalgia.com](//gamesnostalgia.com)[)](games/SimCity2000.zip?raw=true)
 
-[Super Mario Bros (Source: ](games/SuperMarioBros.zip?raw=true)[emulatorgames.net](//emulatorgames.net)[)](games/SuperMarioBros.zip?raw=true)
+[Super Mario Bros (Source: ](games/SuperMarioBros.zip?raw=true)[bestoldgames.net](//bestoldgames.net)[)](games/SuperMarioBros.zip?raw=true)
 ## Issues
 **Windows 3.1**: Mouse not working after installation. (Solution: Type ``WIN /S`` instead of ``WIN`` when starting Windows.)
