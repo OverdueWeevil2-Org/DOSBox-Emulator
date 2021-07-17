@@ -13,3 +13,10 @@
 [Super Mario Bros (Source: ](games/SuperMarioBros.zip?raw=true)[bestoldgames.net](//bestoldgames.net)[)](games/SuperMarioBros.zip?raw=true)
 ## Issues
 **Windows 3.1**: Mouse not working after installation. (Solution: Type ``WIN /S`` instead of ``WIN`` when starting Windows.)
+## How to install SVGA Graphics Driver on Windows 3.1?
+1. Open the Windows Setup program.
+2. From the Options tab, click Change System Settings.
+3. Click on the drop down menu named Display and select Other Display.
+4. Type C:\Driver and select OK.
+5. Click Super VGA 1024x768 256 Small.
+6. Click Restart Now
