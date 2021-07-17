@@ -110,11 +110,11 @@
 		
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: "auto",
+        cycles: "max",
         autolock: true,
     }).ready(function (fs, main) {
       fs.extract(URL).then(function () {
-        main(["-c", Exec, "-c", "cd C:\Driver", "-c", "svga", "-c", "vgapatch p", "-c", "cd C:\WINDOWS", "-c", "WIN /S"]).then(function (ci) {
+        main(["-c", Exec, "-c", "cd \Driver", "-c", "svga", "-c", "vgapatch p", "-c", "cd \WINDOWS", "-c", "WIN /S"]).then(function (ci) {
             window.ci = ci;
         });
       });
