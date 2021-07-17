@@ -19,4 +19,6 @@
 3. Click on the drop down menu named Display and select Other Display.
 4. Type C:\Driver and select OK.
 5. Click Super VGA 1024x768 256 Small.
-6. Click Restart Now
+6. Click OK.
+7. Click OK.
+8. Click Restart Now
