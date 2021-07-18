@@ -44,6 +44,8 @@
 <button id="TrySimCity2000" onClick="TrySimCity2000()">Try SimCity 2000</button>
 <button id="TrySimCity" onClick="TrySimCity()">Try SimCity</button>
 <button id="TryMario" onClick="TryMario()">Try Super Mario Bros</button>
+<button id="TryWindows95a" onClick="TryWindows95a()">Try Windows95a.img (Boot Disk)</button>
+<button id="TryWindows95b" onClick="TryWindows95b()">Try Windows95b.img (Boot Disk)</button>
 <button onClick="Issues()">Issues</button>
 <button onClick="Issuesjsdos()">js-dos Issues</button>
 <script>location.href = '#EmulatorZ';</script>
@@ -170,6 +172,48 @@
         location.href = '#jsdos';
         var Exec = "sys01 1"
         var URL = "games/SuperMarioBros.zip"
+		
+    Dos(document.getElementById("jsdos"), {
+        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
+        cycles: "max",
+        autolock: true,
+    }).ready(function (fs, main) {
+      fs.extract(URL).then(function () {
+        main(["-c", Exec]).then(function (ci) {
+            window.ci = ci;
+        });
+      });
+    });
+  
+	}
+</script>
+<script>
+	function TryWindows95a()
+	{
+        location.href = '#jsdos';
+        var Exec = "boot Windows95a.img"
+        var URL = "games/Windows95a.zip"
+		
+    Dos(document.getElementById("jsdos"), {
+        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
+        cycles: "max",
+        autolock: true,
+    }).ready(function (fs, main) {
+      fs.extract(URL).then(function () {
+        main(["-c", Exec]).then(function (ci) {
+            window.ci = ci;
+        });
+      });
+    });
+  
+	}
+</script>
+<script>
+	function TryWindows95b()
+	{
+        location.href = '#jsdos';
+        var Exec = "boot Windows95b.img"
+        var URL = "games/Windows95b.zip"
 		
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
