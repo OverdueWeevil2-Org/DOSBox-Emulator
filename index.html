@@ -200,7 +200,7 @@
         autolock: true,
     }).ready(function (fs, main) {
       fs.extract(URL).then(function () {
-        main(["-c", Exec]).then(function (ci) {
+        main(["-c", "@echo off", "-c", "cls", "-c", Exec]).then(function (ci) {
             window.ci = ci;
         });
       });
@@ -221,7 +221,7 @@
         autolock: true,
     }).ready(function (fs, main) {
       fs.extract(URL).then(function () {
-        main(["-c", Exec]).then(function (ci) {
+        main(["-c", "@echo off", "-c", "cls", "-c", Exec]).then(function (ci) {
             window.ci = ci;
         });
       });
