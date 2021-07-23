@@ -117,7 +117,7 @@
         autolock: true,
     }).ready(function (fs, main) {
       fs.extract(URL).then(function () {
-        main(["-c", Exec, "-c", "cd \Driver", "-c", "svga", "-c", "vgapatch p", "-c", "cd \WINDOWS", "-c", "WIN /S"]).then(function (ci) {
+        main(["-c", Exec, "-c", "cd \Driver", "-c", "svga -o", "-c", "vgapatch p", "-c", "cd \WINDOWS", "-c", "WIN /S"]).then(function (ci) {
             window.ci = ci;
         });
       });
