@@ -15,7 +15,7 @@
 **Windows 3.1**: Mouse not working after installation. (Solution: Type ``WIN /S`` instead of ``WIN`` when starting Windows.)
 ## How to install SVGA Graphics Driver on Windows 3.1?
 1. Exit Windows
-2. Type \INSTALLSVGA.BAT and press Enter.
+2. Type \DRIVERi.BAT and press Enter.
 3. Open the Windows Setup program.
 4. From the Options tab, click Change System Settings.
 5. Click on the drop down menu named Display and select Other Display.
