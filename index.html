@@ -23,6 +23,7 @@
 
 <body>
   <canvas id="jsdos"></canvas>
+  <button style="position: absolute; right: 1em; top: 1em;" onclick="ExitDOSBoxZ()">Exit</button>
 <!--  <script>
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
@@ -54,6 +55,13 @@
 	function Issues()
 	{
         location.href = 'https://github.com/OverdueWeevil2-Org/DOSBox-Emulator/issues?utm-source=OverdueWeevil2-Org.github.io';
+	}
+</script>
+<script>
+	function ExitDOSBoxZ()
+	{
+        location.href = '#EmulatorZ';
+	ci.exit();
 	}
 </script>
 <script>
