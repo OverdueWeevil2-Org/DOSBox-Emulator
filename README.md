@@ -1,4 +1,4 @@
-# ![](https://overdueweevil2-org.github.io/DOSBox-Emulator/favicon.ico) [DOSBox-Emulator](https://overdueweevil2-org.github.io/DOSBox-Emulator#EmulatorZ) [![Netlify Status](https://api.netlify.com/api/v1/badges/459e8947-1664-4df2-abe1-ca60204f8451/deploy-status)](https://app.netlify.com/sites/dosbox-emulator/deploys)
+# ![](https://overdueweevil2-org.github.io/DOSBox-Emulator/favicon.ico) [DOSBox-Emulator](http://dosbox-emulator.netlify.app) [![Netlify Status](https://api.netlify.com/api/v1/badges/459e8947-1664-4df2-abe1-ca60204f8451/deploy-status)](https://app.netlify.com/sites/dosbox-emulator/deploys)
 ## Download DOSBox Games
 [Digger (Source: ](https://js-dos.com/6.22/current/test/digger.zip)[js-dos.com](//js-dos.com)[)](https://js-dos.com/6.22/current/test/digger.zip)
 
