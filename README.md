@@ -1,4 +1,4 @@
-# ![](https://overdueweevil2-org.github.io/DOSBox-Emulator/favicon.ico) [DOSBox-Emulator](http://dosbox-emulator.netlify.app)
+# ![](favicon.ico) [DOSBox-Emulator](https://OverdueWeevil2-Org.github.io/DOSBox-Emulator/)
 ## Download DOSBox Games
 [Digger (Source: ](https://js-dos.com/6.22/current/test/digger.zip)[js-dos.com](//js-dos.com)[)](https://js-dos.com/6.22/current/test/digger.zip)
 
