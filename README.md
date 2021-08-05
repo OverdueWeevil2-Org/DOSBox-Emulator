@@ -1,31 +1,4 @@
 # ![](favicon.ico) [DOSBox-Emulator](https://OverdueWeevil2-Org.github.io/DOSBox-Emulator/)
-## Download DOSBox Games
-[Digger (Source: ](https://js-dos.com/6.22/current/test/digger.zip)[js-dos.com](//js-dos.com)[)](https://js-dos.com/6.22/current/test/digger.zip)
-
-[Wolfenstein 3D (Source: ](games/wolf14ms.zip?raw=true)[winworldpc.com](//winworldpc.com)[)](games/wolf14ms.zip?raw=true)
-
-[Windows 3.1 (Source: ](games/Windows31.zip?raw=true)[winworldpc.com](//winworldpc.com)[)](games/Windows31.zip?raw=true)
-
-[SimCity 2000 (Source: ](games/SimCity2000.zip?raw=true)[gamesnostalgia.com](//gamesnostalgia.com)[)](games/SimCity2000.zip?raw=true)
-
-[SimCity (Source: ](games/SimCity.zip?raw=true)[archive.org](//archive.org)[)](games/SimCity.zip?raw=true)
-
-[Super Mario Bros (Source: ](games/SuperMarioBros.zip?raw=true)[bestoldgames.net](//bestoldgames.net)[)](games/SuperMarioBros.zip?raw=true)
-## Issues
-**Windows 3.1**: Mouse not working after installation. (Solution: Type ``WIN /S`` instead of ``WIN`` when starting Windows.)
-## How to install SVGA Graphics Driver on Windows 3.1?
-1. Exit Windows
-2. Type ``cd \Driver`` and press Enter.
-3. Type ``svga -o`` and press Enter.
-4. Press ``y``
-5. Type ``vgapatch p`` and press Enter.
-6. Type ``cd \Windows`` and press Enter.
-7. Type ``WIN /S`` and press Enter.
-8. Open the Windows Setup program.
-9. From the Options tab, click Change System Settings.
-10. Click on the drop down menu named Display and select Other Display.
-11. Type C:\Driver and select OK.
-12. Click ``Super VGA 1024x768 256 Small``.
-13. Click OK.
-14. Click OK.
-15. Click Restart Now
+Run DOSBox Emulator in web browser.
+# What is DOSBox?
+**DOSBox** is a free and open-source emulator of an Intel x86 personal computer designed for the purpose of running software created for disk operating systems on IBM PC compatibles, primarily DOS video games. It was first released in 2002, when DOS technology was becoming obsolete. It is notable for its widespread use for running DOS games, as well as being used in commercial re-releases of those games.
