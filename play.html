@@ -24,7 +24,6 @@ const game = urlParams.get('game')
 
 <body>
   <div id="jsdos" />
-  <button style="position: absolute; right: 1em; top: 1em;" onclick="RestartNOW()">Restart</button>
 <!--  <script>
     Dos(document.getElementById("jsdos"), {
         wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
@@ -43,12 +42,3 @@ const game = urlParams.get('game')
 <script>emulators.pathPrefix = "games/";
          Dos(document.getElementById("jsdos"))
              .run(game);</script>
-<script>
-	function RestartNOW()
-	{
-	ci.exit();
-  emulators.pathPrefix = "games/";
-         Dos(document.getElementById("jsdos"))
-             .run(game);
-	}
-</script>
