@@ -1,28 +1,22 @@
 <!doctype html>
 <html lang="en">
-<httpProtocol>
-    <customHeaders>
-        <add name="Access-Control-Allow-Origin" value="*" />
-    </customHeaders>
-</httpProtocol>
-
 <head>
-  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>DOSBox Emulator (Powered by js-dos)</title>
-  <script src="https://js-dos.com/6.22/current/js-dos.js"></script>
+  <script src="https://js-dos.com/v7/build/releases/latest/js-dos/js-dos.js"></script>
+  <link href="https://js-dos.com/v7/build/releases/latest/js-dos/js-dos.css" rel="stylesheet">
   <style>
-    html, body, canvas, .dosbox-container {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
+    html, body, #jsdos {
+             width: 100%;
+             height: 100%;
+             margin: 0;
+             padding: 0;
+         }
   </style>
 </head>
 
 <body>
-  <canvas id="jsdos"></canvas>
+  <div id="jsdos" />
   <button style="position: absolute; right: 1em; top: 1em;" onclick="ExitDOSBoxZ()">Exit</button>
 <!--  <script>
     Dos(document.getElementById("jsdos"), {
@@ -74,20 +68,9 @@
 	function TryDigger()
 	{
         location.href = '#jsdos';
-        var Exec = "DIGGER.COM"
-        var URL = "https://js-dos.com/6.22/current/test/digger.zip"
-		
-    Dos(document.getElementById("jsdos"), {
-        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: 1000,
-        autolock: true,
-    }).ready(function (fs, main) {
-      fs.extract(URL).then(function () {
-        main(["-c", Exec]).then(function (ci) {
-            window.ci = ci;
-        });
-      });
-    });
+        emulators.pathPrefix = "games/";
+         Dos(document.getElementById("jsdos"))
+             .run("digger-v3.jsdos");
   
 	}
 </script>
@@ -95,20 +78,9 @@
 	function TryWolfenstein3D()
 	{
         location.href = '#jsdos';
-        var Exec = "INSTALL.BAT"
-        var URL = "games/wolf14ms.zip"
-		
-    Dos(document.getElementById("jsdos"), {
-        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: "auto",
-        autolock: true,
-    }).ready(function (fs, main) {
-      fs.extract(URL).then(function () {
-        main(["-c", Exec, "-c", "WOLF3D"]).then(function (ci) {
-            window.ci = ci;
-        });
-      });
-    });
+        emulators.pathPrefix = "games/";
+         Dos(document.getElementById("jsdos"))
+             .run("wolf14ms.jsdos");
   
 	}
 </script>
@@ -116,20 +88,9 @@
 	function TryWindows31()
 	{
         location.href = '#jsdos';
-        var Exec = "setup.exe"
-        var URL = "games/Windows31.zip"
-		
-    Dos(document.getElementById("jsdos"), {
-        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: "max",
-        autolock: true,
-    }).ready(function (fs, main) {
-      fs.extract(URL).then(function () {
-        main(["-c", Exec, "-c", "cd \Driver", "-c", "svga -o", "-c", "vgapatch p", "-c", "cd \WINDOWS", "-c", "WIN /S"]).then(function (ci) {
-            window.ci = ci;
-        });
-      });
-    });
+        emulators.pathPrefix = "games/";
+         Dos(document.getElementById("jsdos"))
+             .run("Windows31.jsdos");
   
 	}
 </script>
@@ -137,20 +98,9 @@
 	function TrySimCity2000()
 	{
         location.href = '#jsdos';
-        var Exec = "SC2000.EXE"
-        var URL = "games/SimCity2000.zip"
-		
-    Dos(document.getElementById("jsdos"), {
-        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: "max",
-        autolock: true,
-    }).ready(function (fs, main) {
-      fs.extract(URL).then(function () {
-        main(["-c", Exec]).then(function (ci) {
-            window.ci = ci;
-        });
-      });
-    });
+        emulators.pathPrefix = "games/";
+         Dos(document.getElementById("jsdos"))
+             .run("SimCity2000.jsdos");
   
 	}
 </script>
@@ -158,20 +108,9 @@
 	function TrySimCity()
 	{
         location.href = '#jsdos';
-        var Exec = "SIMCITY.EXE"
-        var URL = "games/SimCity.zip"
-		
-    Dos(document.getElementById("jsdos"), {
-        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: "max",
-        autolock: true,
-    }).ready(function (fs, main) {
-      fs.extract(URL).then(function () {
-        main(["-c", Exec]).then(function (ci) {
-            window.ci = ci;
-        });
-      });
-    });
+        emulators.pathPrefix = "games/";
+         Dos(document.getElementById("jsdos"))
+             .run("SimCity.jsdos");
   
 	}
 </script>
@@ -179,83 +118,9 @@
 	function TryMario()
 	{
         location.href = '#jsdos';
-        var Exec = "sys01 1"
-        var URL = "games/SuperMarioBros.zip"
-		
-    Dos(document.getElementById("jsdos"), {
-        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: "max",
-        autolock: true,
-    }).ready(function (fs, main) {
-      fs.extract(URL).then(function () {
-        main(["-c", Exec]).then(function (ci) {
-            window.ci = ci;
-        });
-      });
-    });
-  
-	}
-</script>
-<script>
-	function TryWindows95a()
-	{
-        location.href = '#jsdos';
-        var Exec = "boot Windows95a.img"
-        var URL = "games/Windows95a.zip"
-		
-    Dos(document.getElementById("jsdos"), {
-        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: "max",
-        autolock: true,
-    }).ready(function (fs, main) {
-      fs.extract(URL).then(function () {
-        main(["-c", "@echo off", "-c", "cls", "-c", Exec]).then(function (ci) {
-            window.ci = ci;
-        });
-      });
-    });
-  
-	}
-</script>
-<script>
-	function TryWindows95b()
-	{
-        location.href = '#jsdos';
-        var Exec = "boot Windows95b.img"
-        var URL = "games/Windows95b.zip"
-		
-    Dos(document.getElementById("jsdos"), {
-        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: "max",
-        autolock: true,
-    }).ready(function (fs, main) {
-      fs.extract(URL).then(function () {
-        main(["-c", "@echo off", "-c", "cls", "-c", Exec]).then(function (ci) {
-            window.ci = ci;
-        });
-      });
-    });
-  
-	}
-</script>
-<script>
-	function TryMsDos()
-	{
-        location.href = '#jsdos';
-        var Exec = "boot Dos6.22.img"
-        var URL = "games/Dos6.22.zip"
-		
-    Dos(document.getElementById("jsdos"), {
-        wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js",
-        cycles: "max",
-        autolock: true,
-    }).ready(function (fs, main) {
-      fs.extract(URL).then(function () {
-        main(["-c", "@echo off", "-c", "cls", "-c", Exec]).then(function (ci) {
-            window.ci = ci;
-        });
-      });
-    });
+        emulators.pathPrefix = "games/";
+         Dos(document.getElementById("jsdos"))
+             .run("SuperMarioBros.jsdos");
   
 	}
 </script>
