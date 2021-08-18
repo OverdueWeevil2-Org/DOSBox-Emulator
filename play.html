@@ -40,14 +40,14 @@ const game = urlParams.get('game')
   </script> -->
 </body>
 
-<script>emulators.pathPrefix = "https://js-dos.com/v7/build/releases/latest/js-dos/";
+<script>emulators.pathPrefix = "games/";
          Dos(document.getElementById("jsdos"))
              .run(game);</script>
 <script>
 	function RestartNOW()
 	{
 	ci.exit();
-  emulators.pathPrefix = "https://js-dos.com/v7/build/releases/latest/js-dos/";
+  emulators.pathPrefix = "games/";
          Dos(document.getElementById("jsdos"))
              .run(game);
 	}
