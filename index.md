@@ -1,4 +1,5 @@
-## Click the thumbnail to open a game.
+# Run DOSBox Emulator in web browser.
+### Click the thumbnail to open a game.
 # Digger
 Digger is a video game released by Canadian developer Windmill Software as a self-booting disk for IBM PC compatibles. It is similar to the 1982 arcade game Mr. Do! Digger was developed by Rob Sleath, the primary developer of Windmill games. In 1984, Digger was converted to run on IBM PCjr and IBM JX.
 [![Digger](https://user-images.githubusercontent.com/67264530/130066256-b6f6913e-3d1f-4fbc-a846-38ebfb210390.png)](play.html?game=games%2Fdigger-v3.jsdos)
