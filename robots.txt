@@ -3,3 +3,4 @@ Allow: /
 Disallow: /play.html
 Disallow: /games
 Disallow: /games/*
+Disallow: /404.html
