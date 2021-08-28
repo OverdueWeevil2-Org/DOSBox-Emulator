@@ -1,4 +1,5 @@
 # Run DOSBox Emulator in web browser.
+If we forgot your favorite game, we're sorry, you can [new issue](https://github.com/OverdueWeevil2-Org/DOSBox-Emulator/issues/new)
 ### Jump to: [Digger](#digger), [Wolfenstein 3D](#wolfenstein-3d), [Windows 3.1](#windows-31), [SimCity 2000](#simcity-2000), [SimCity Classic](#simcity-classic), [Super Mario Bros.](#super-mario-bros), [Microsoft Flight Simulator](#microsoft-flight-simulator), [Powered by js-dos](#powered-by-js-dos)
 ### Click the thumbnail to open a game.
 # Digger
