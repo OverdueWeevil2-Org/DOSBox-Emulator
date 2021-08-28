@@ -16,6 +16,7 @@ Disallow: /play*
 Disallow: /play.html?games*
 Disallow: /play.html?games=*
 Disallow: /games
+Disallow: /games/
 Disallow: /games/*
 Disallow: /404.html
 Disallow: /404
