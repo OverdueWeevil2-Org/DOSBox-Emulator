@@ -11,6 +11,10 @@
 User-Agent: *
 Allow: /
 Disallow: /play.html
+Disallow: /play.html*
+Disallow: /play*
+Disallow: /play.html?games*
+Disallow: /play.html?games=*
 Disallow: /games
 Disallow: /games/*
 Disallow: /404.html
