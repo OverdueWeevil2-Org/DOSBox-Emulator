@@ -13,6 +13,9 @@ Allow: /
 Disallow: /play.html
 Disallow: /play.html*
 Disallow: /play*
+Disallow: /play?games*
+Disallow: /play?games=*
+Disallow: /play.html*
 Disallow: /play.html?games*
 Disallow: /play.html?games=*
 Disallow: /games
