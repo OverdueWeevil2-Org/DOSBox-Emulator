@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="en">
-<script>const queryString = window.location.search;
-
-const urlParams = new URLSearchParams(queryString);
-
-const game = urlParams.get('game')
-</script>
-
 <head>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  <script>const queryString = window.location.search;
+  
+  const urlParams = new URLSearchParams(queryString);
+
+  const game = urlParams.get('game')
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <script src="games/js-dos.js"></script>
   <link href="games/js-dos.css" rel="stylesheet">
