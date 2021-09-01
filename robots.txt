@@ -20,5 +20,8 @@ Disallow: /play.html?games=*
 Disallow: /games
 Disallow: /games/
 Disallow: /games/*
+Disallow: /images/*
+Disallow: /images/
+Disallow: /images
 Disallow: /404.html
 Disallow: /404
