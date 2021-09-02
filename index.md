@@ -1,6 +1,6 @@
 # Run DOSBox Emulator in web browser.
 If we forgot your favorite game, we're sorry, you can [new issue](https://github.com/OverdueWeevil2-Org/DOSBox-Emulator/issues/new?assignees=&labels=&template=game-request.md&title=%5BGame+request%5D)
-### Jump to: [Digger](#digger), [Wolfenstein 3D](#wolfenstein-3d), [Windows 3.1](#windows-31), [SimCity 2000](#simcity-2000), [SimCity Classic](#simcity-classic), [Super Mario Bros.](#super-mario-bros), [Microsoft Flight Simulator](#microsoft-flight-simulator)
+### Jump to: [Digger](#digger), [Wolfenstein 3D](#wolfenstein-3d), [Windows 3.1](#windows-31), [SimCity 2000](#simcity-2000), [SimCity Classic](#simcity-classic), [Super Mario Bros.](#super-mario-bros), [Microsoft Flight Simulator](#microsoft-flight-simulator), [Windows 1.04](#windows-104)
 ### Click the thumbnail to open a game.
 # Digger
 Digger is a video game released by Canadian developer Windmill Software as a self-booting disk for IBM PC compatibles. It is similar to the 1982 arcade game Mr. Do! Digger was developed by Rob Sleath, the primary developer of Windmill games. In 1984, Digger was converted to run on IBM PCjr and IBM JX.
@@ -25,3 +25,6 @@ Super Mario Bros. is a platform game developed and published by Nintendo.
 
 Microsoft Flight Simulator (often abbreviated as MSFS or FS) is a series of amateur flight simulator programs for Microsoft Windows operating systems, and earlier for MS-DOS and Classic Mac OS.
 [![Microsoft Flight Simulator](images/MSFS.webp)](play.html?game=games%2FMicrosoftFlightSimulator.jsdos)
+# Windows 1.04
+Windows version 1.04, released in April 1987, added support for the new IBM PS/2 computers, although no support for PS/2 mice or new VGA graphics modes was provided.
+[![Windows 1.04](images/Windows_1.04.webp)](play.html?game=games%2FWindows103.jsdos)
