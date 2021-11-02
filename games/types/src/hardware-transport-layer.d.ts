@@ -11,6 +11,6 @@ export interface Hardware {
 export declare class HardwareTransportLayerFactory {
     private serverMessageHandler;
     constructor();
-    createTransportLayer: (realtime: Hardware) => TransportLayer;
+    createTransportLayer(realtime: Hardware): TransportLayer;
 }
 export declare const hardwareTransportLayerFactory: HardwareTransportLayerFactory;
