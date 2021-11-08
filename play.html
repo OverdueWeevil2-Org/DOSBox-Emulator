@@ -1,33 +1,29 @@
 <!doctype html>
-<html lang="en">
-<head>
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-    <![endif]-->
-  <script>const queryString = window.location.search;
-  
-  const urlParams = new URLSearchParams(queryString);
-
-  const game = urlParams.get('game')
-  </script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="robots" content="noindex">
-  <script src="games/js-dos.js"></script>
-  <link href="games/js-dos.css" rel="stylesheet">
-  <style>
-    html, body, #jsdos {
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="robots" content="noindex">
+        <style>
+         html, body, #jsdos {
              width: 100%;
              height: 100%;
              margin: 0;
              padding: 0;
          }
-  </style>
-</head>
-
-<body>
-  <div id="jsdos" />
-</body>
-
-<script>emulators.pathPrefix = "games/";
+        </style>
+        <script>const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const game = urlParams.get('game')
+        </script>
+        <script src="games/js-dos.js"></script>
+        <link href="games/js-dos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="jsdos" />
+        <script>
+         emulators.pathPrefix = "games/";
          Dos(document.getElementById("jsdos"))
-             .run(game);</script>
+             .run(game);
+        </script>
+    </body>
+</html>
