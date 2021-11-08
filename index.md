@@ -29,5 +29,5 @@ Microsoft Flight Simulator (often abbreviated as MSFS or FS) is a series of amat
 Windows version 1.04, released in April 1987, added support for the new IBM PS/2 computers, although no support for PS/2 mice or new VGA graphics modes was provided.
 [![Windows 1.04](images/Windows_1.04.webp)](play.html?game=games%2FWindows103.jsdos)
 # Windows 2.03
-Windows 2.0 is an obsoleted 16-bit Microsoft Windows GUI-based operating environment that was released on December 9, 1987,[1] and the successor to Windows 1.0.
+Windows 2.0 is an obsoleted 16-bit Microsoft Windows GUI-based operating environment that was released on December 9, 1987, and the successor to Windows 1.0.
 [![Windows 2.03](images/Win203.png)](play.html?game=games%2FWin203.jsdos)
