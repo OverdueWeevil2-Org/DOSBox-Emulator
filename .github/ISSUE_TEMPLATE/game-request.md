@@ -14,4 +14,4 @@ Type your favorite game name. Ex. Microsoft Flight Simulator
 Type your favorite game description.
 
 **ZIP or JsDos archive**
-Upload ZIP or JsDos archive. (You can upload JsDos archive from websites like [Dropbox](//dropbox.com).)
+Upload ZIP or JsDos archive.
