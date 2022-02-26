@@ -1,5 +1,7 @@
 # ![](favicon.ico) [DOSBox-Emulator](https://dos-box.tk)
-Run DOSBox in web browser. (Website)
+Run DOSBox Games in web browser. (Website)
+
+Note: This is just a website, not a program or software.
 
 Website: https://dos-box.tk
 # What is DOSBox?
