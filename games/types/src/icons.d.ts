@@ -80,4 +80,16 @@ export declare const Icons: {
     Twitter: (props: {
         class: string;
     }) => import("preact").VNode<any> | import("preact").VNode<any>[];
+    FloppyDisk: (props: {
+        class: string;
+    }) => import("preact").VNode<any> | import("preact").VNode<any>[];
+    Online: (props: {
+        class: string;
+    }) => import("preact").VNode<any> | import("preact").VNode<any>[];
+    Offline: (props: {
+        class: string;
+    }) => import("preact").VNode<any> | import("preact").VNode<any>[];
+    InformationCircle: (props: {
+        class: string;
+    }) => import("preact").VNode<any> | import("preact").VNode<any>[];
 };

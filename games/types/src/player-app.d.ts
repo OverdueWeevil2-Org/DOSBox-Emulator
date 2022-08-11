@@ -1,9 +1,9 @@
-import { ClientId, DosPlayer, DosPlayerOptions } from "./player";
-import { LatencyInfo } from "./backend/jj/latency";
+import { ClientId, DosPlayer, DosPlayerOptionsWithDefaults } from "./player";
+import { LatencyInfo } from "./backend/v7/latency";
 export declare type SidebarPage = "main" | "latency-info" | "networking";
 export interface Props {
     player: () => DosPlayer;
-    options: () => DosPlayerOptions;
+    options: () => DosPlayerOptionsWithDefaults;
     clientId: ClientId | null;
     setClientId: (clientId: ClientId | null) => void;
     requestClientId?: (userGesture: boolean) => Promise<ClientId | null>;
@@ -30,22 +30,21 @@ export interface Props {
     openSideBar: () => void;
     closeSideBar: () => void;
     region: string | null;
-    estimatingRegion: string | null;
     setRegion: (region: string | null) => void;
+    estimatingRegion: string | null;
+    setEstimatingRegion: (region: string | null) => void;
     latencyInfo: LatencyInfo | null;
     setLatencyInfo: (latencyInfo: LatencyInfo) => void;
     showTips: boolean;
     setShowTips: (showTips: boolean) => void;
     sideBarPage: SidebarPage;
     setSideBarPage: (page: SidebarPage) => void;
-    showNewInstance: boolean;
-    setShowNewInstance: (showNewInstance: boolean) => void;
     ipxConnected: boolean;
     setIpxConnected: (ipxConnected: boolean) => void;
 }
 export declare function PlayerApp(playerProps: {
     player: () => DosPlayer;
-    options: () => DosPlayerOptions;
+    options: () => DosPlayerOptionsWithDefaults;
     setOnRun: (onRun: () => void) => void;
 }): import("preact").VNode<any> | import("preact").VNode<any>[];
-export declare function createPlayerApp(root: HTMLDivElement, player: DosPlayer, options: DosPlayerOptions, setOnRun: (onRun: () => void) => void): void;
+export declare function createPlayerApp(root: HTMLDivElement, player: DosPlayer, options: DosPlayerOptionsWithDefaults, setOnRun: (onRun: () => void) => void): void;
