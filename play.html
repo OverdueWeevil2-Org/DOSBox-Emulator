@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, notranslate, noimageindex" />
+        <meta name="robots" content="NOINDEX, NOFOLLOW, NOARCHIVE" />
+		<script crossorigin src="https://polyfill.app/api/polyfill?features=es,url&minify"></script>
         <style>
          html, body, #jsdos {
              width: 100%;
@@ -11,19 +12,23 @@
              padding: 0;
          }
         </style>
-        <script>const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const game = urlParams.get('game')
+        <script>
+		var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+        var game = urlParams.get('game');
         </script>
-        <script src="games/js-dos.js"></script>
-        <link href="games/js-dos.css" rel="stylesheet">
+        <script src="js-dos/js-dos.js"></script>
+        <link href="js-dos/js-dos.css" rel="stylesheet">
     </head>
     <body>
-        <div id="jsdos" />
+        <div id="jsdos"></div>
         <script>
-         emulators.pathPrefix = "games/";
-         Dos(document.getElementById("jsdos"))
-             .run(game);
+         emulators.pathPrefix = "js-dos/";
+         Dos(document.getElementById("jsdos", {
+			clientId: function(userGesture) {
+				console.log(userGesture);
+			}
+		 })).run(game);
         </script>
     </body>
 </html>
